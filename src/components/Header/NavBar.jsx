@@ -12,6 +12,7 @@ display: flex;
 margin-right: 2rem; 
 `
 
+//remove color css attribute to global styled
 const NavBarA = styled.a`
 color: ${colors.primaryBlue};
 display: block;

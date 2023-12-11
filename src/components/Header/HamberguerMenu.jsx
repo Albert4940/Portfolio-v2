@@ -4,6 +4,8 @@ const MenuContainer = styled.div`
     display:none;
     transition: 0.3s;
 `
+
+//add variables for isopen
 const CloseButton = styled.button`
     display: none;
     font-size: 3rem;
@@ -16,13 +18,13 @@ const MenuBar = styled.div`
     margin: 0.5rem;
     background-color: ${colors.primaryBlue};
 `
-const HamberguerMenu = () => {
+const HamberguerMenu = ({isOpen,setOpen}) => {
     return(
-     <MenuContainer id="menu" >
+     <MenuContainer id="menu" className={isOpen ? "open" : ""} onClick={() => setOpen(!isOpen)}>
         <MenuBar />
         <MenuBar />
         <MenuBar />
-        <CloseButton id="btn-close">X</CloseButton>   
+        <CloseButton id="btn-close" onClick={() => setOpen(!isOpen)}>X</CloseButton>   
       </MenuContainer>
     )
 }

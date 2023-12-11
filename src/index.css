@@ -108,6 +108,37 @@ img {
   width: 100%;
 }
 
+/*MOBILE*/
+
+#navbar-mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  margin-right: -800px;
+  transition:0.5s; 
+}
+
+#navbar-mobile.open {
+  margin-right: 0;
+}
+
+#menu.open div{
+  display: none;
+}
+
+#menu.open #btn-close{
+  display: block;
+  position: relative;
+  background: none;
+  border: none;
+  color: var(--main-white);
+  font-size: 3rem;
+  font-weight: 400;
+  z-index: 5;  
+}
+
 @media only screen and (max-width: 48em){
   #header #navbar{
    display: none;
@@ -118,3 +149,10 @@ img {
     margin-right: 2rem;
   }
 }
+
+@media (min-width: 48em) {
+  #header #navbar-mobile {
+    display:none;
+    background-color: #be3144;
+  }
+ }
