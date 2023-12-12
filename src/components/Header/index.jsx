@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import NavBar from './NavBar';
-import NavBarMobile from './NavBarMobile';
+//import NavBarMobile from './NavBarMobile';
 import HamberguerMenu from './HamberguerMenu';
 import colors from '../../utils/style/colors';
-import { useState } from 'react';
+import { useEffect,useState } from 'react';
 
 const HeaderContainer = styled.header`
     width: 100%;
@@ -18,6 +18,7 @@ const HeaderContainer = styled.header`
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 5;
 `
+//how to style child element with styled
 const AlbertLogo = styled.div`
     display: flex;
     justify-content: center;
@@ -25,17 +26,40 @@ const AlbertLogo = styled.div`
     margin-left: 2rem;
     font-size: 2.2rem;
 `
-
+const LinkLogo = styled.a`
+  color:${colors.primaryBlue};
+  font-weight: bold;
+`
 
 const Header = () => {
     const [isOpen, setOpen] = useState(false);
-    console.log(isOpen)
+    const [windowSize, setWindowSize] = useState(0);
+
+    const handleResize = () => {
+        setWindowSize(window.innerWidth)
+    }
+  
+
+  useEffect(() => {
+    
+    setWindowSize(window.innerWidth)
+
+    window.addEventListener('resize', handleResize);
+
+    // Remove event listener on component unmount to avoid memory leaks
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  },[])
+
     return(
         <HeaderContainer id="header">
-            <AlbertLogo id="albert-logo"><a href="#welcome-section">ALBERT</a></AlbertLogo>
+            <AlbertLogo id="albert-logo">
+              <LinkLogo href="#welcome-section" >ALBERT</LinkLogo>
+            </AlbertLogo>
             <HamberguerMenu isOpen={isOpen} setOpen={setOpen}/>
-            <NavBar />
-            <NavBarMobile isOpen={isOpen} />
+            <NavBar windowSize={windowSize} isOpen={isOpen}/>
+            {/* <NavBarMobile isOpen={isOpen} /> */}
         </HeaderContainer>
     )
 }

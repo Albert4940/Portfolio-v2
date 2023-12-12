@@ -110,7 +110,7 @@ img {
 
 /*MOBILE*/
 
-#navbar-mobile {
+/* #navbar-mobile {
   position: absolute;
   top: 0;
   right: 0;
@@ -122,13 +122,13 @@ img {
 
 #navbar-mobile.open {
   margin-right: 0;
-}
+} */
 
 #menu.open div{
   display: none;
 }
 
-#menu.open #btn-close{
+/* #menu.open #btn-close{
   display: block;
   position: relative;
   background: none;
@@ -137,12 +137,12 @@ img {
   font-size: 3rem;
   font-weight: 400;
   z-index: 5;  
-}
+} */
 
 @media only screen and (max-width: 48em){
-  #header #navbar{
+  /* #header #navbar{
    display: none;
-  }
+  } */
   
   #menu{    
     display: block;

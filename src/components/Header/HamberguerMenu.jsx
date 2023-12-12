@@ -6,10 +6,17 @@ const MenuContainer = styled.div`
 `
 
 //add variables for isopen
+//play with size for transition
+const openStyleButton = `display: block;
+position: relative;
+background: none;
+border: none;
+color: ${colors.primaryBlue};
+font-size: 3rem;
+font-weight: bold;
+z-index: 5;  ` 
 const CloseButton = styled.button`
-    display: none;
-    font-size: 3rem;
-    transition: 0.3s;
+    ${({isOpen}) => !isOpen ? `display: none;` : openStyleButton}
 `
 //change componentname Hamberger menu
 const MenuBar = styled.div`
@@ -24,7 +31,7 @@ const HamberguerMenu = ({isOpen,setOpen}) => {
         <MenuBar />
         <MenuBar />
         <MenuBar />
-        <CloseButton id="btn-close" onClick={() => setOpen(!isOpen)}>X</CloseButton>   
+        <CloseButton id="btn-close" isOpen={isOpen} onClick={() => setOpen(!isOpen)}>X</CloseButton>   
       </MenuContainer>
     )
 }
