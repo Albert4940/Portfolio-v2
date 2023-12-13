@@ -5,6 +5,7 @@ import HamberguerMenu from './HamberguerMenu';
 import colors from '../../utils/style/colors';
 import { useEffect,useState } from 'react';
 
+/* */
 const HeaderContainer = styled.header`
     width: 100%;
     min-height: 60px;
@@ -15,7 +16,6 @@ const HeaderContainer = styled.header`
     top: 0;
     left: 0;
     background: rgba(228, 233, 239, 0.90);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 5;
 `
 //how to style child element with styled
