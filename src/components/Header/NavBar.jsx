@@ -45,7 +45,12 @@ const NavBarA = styled.a`
     color: ${colors.primaryBlue};
     display: block;
     font-size: 2.2rem;
-    padding: 2rem;    
+    padding: 2rem;  
+    transform: tanslateX(0);
+    transition: transform 0.3s ease-out;
+    &:hover{
+        transform: translateY(-3px);
+    }
 `
 const NavBar = ({windowSize, isOpen}) => {   
     // Refac: Put the screensize into the context 

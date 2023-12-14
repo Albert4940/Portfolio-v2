@@ -14,10 +14,14 @@ const Button = ButtonStyle(colors);
 const ResumeButton = () => {
     return(
         <Button>
-            Resume
-            
-                <FaArrowDown style={IStyle}/>
-            
+          <a 
+            style={{color: colors.primaryWhite}}
+            href="path/to/file" 
+            alt="" 
+            download>
+                Resume
+            </a>
+          <FaArrowDown style={IStyle}/>            
         </Button>
     )
 }
