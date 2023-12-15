@@ -4,8 +4,8 @@ const ButtonStyle = ({primaryWhite,secondary,thirdy}) => (styled.button`
     border:none;
     cursor:pointer;
       display: flex;
-  align-items: center;
-  margin:auto;
+    align-items: center;
+    margin:auto;
     padding: 1rem 2rem;
     border-radius: 2px;
     font-size: 2rem;
