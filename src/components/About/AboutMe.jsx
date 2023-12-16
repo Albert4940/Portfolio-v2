@@ -1,11 +1,18 @@
 import styled from "styled-components";
 import colors from "../../utils/style/colors";
 import ImgProfile from '../../assets/profile.jpg';
+import { useContext } from "react";
+import { ScreenSizeContext } from "../../utils/context";
 
+const AboutMeStyleMobile = `
+flex-direction: column;  
+align-items: center;
+`
 const AboutMeDiv = styled.div`
 margin: 30px auto; 
 display: flex;
 justify-content: center;
+${(props) => props.isDeviceMobile && AboutMeStyleMobile}
 `
 
 const AboutImg = styled.img`
@@ -18,6 +25,7 @@ const AboutImg = styled.img`
 
 const AboutText = styled.div`
 width: 40%;
+${({isDeviceMobile}) => isDeviceMobile ? ` width: 65%;` : ``}
 `
 //How many h1 tagssholud exists in a website put it inside global styled
 const AboutH2 = styled.h2`
@@ -29,10 +37,15 @@ const P = styled.p`
     color:${colors.primaryBlue};
 `
 const AboutMe = () => {
+
+    //remove logic to context
+    const {screenSize} = useContext(ScreenSizeContext);
+    const isDeviceMobile = screenSize <= 768 ? true : false; 
+
     return(
-    <AboutMeDiv id="about">
+    <AboutMeDiv id="about" isDeviceMobile={isDeviceMobile}>
         <AboutImg id="profil-img" alt="Profil image" src={ImgProfile} />
-        <AboutText id="about-text">
+        <AboutText id="about-text" isDeviceMobile={isDeviceMobile}>
           <AboutH2>About me</AboutH2>
           <P>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue tellus in est ultricies, sit amet dignissim tellus facilisis. 
