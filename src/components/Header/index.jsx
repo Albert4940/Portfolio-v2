@@ -4,7 +4,6 @@ import NavBar from './NavBar';
 import HamberguerMenu from './HamberguerMenu';
 import colors from '../../utils/style/colors';
 import { useEffect,useState } from 'react';
-
 /* */
 const HeaderContainer = styled.header`
     width: 100%;
@@ -33,24 +32,24 @@ const LinkLogo = styled.a`
 
 const Header = () => {
     const [isOpen, setOpen] = useState(false);
-    const [windowSize, setWindowSize] = useState(0);
+    // const [windowSize, setWindowSize] = useState(0);
 
-    const handleResize = () => {
-        setWindowSize(window.innerWidth)
-    }
+    // const handleResize = () => {
+    //     setWindowSize(window.innerWidth)
+    // }
   
 
-  useEffect(() => {
+  // useEffect(() => {
     
-    setWindowSize(window.innerWidth)
+  //   setWindowSize(window.innerWidth)
 
-    window.addEventListener('resize', handleResize);
+  //   window.addEventListener('resize', handleResize);
 
-    // Remove event listener on component unmount to avoid memory leaks
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  },[])
+  //   // Remove event listener on component unmount to avoid memory leaks
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // },[])
 
     return(
         <HeaderContainer id="header">
@@ -58,7 +57,7 @@ const Header = () => {
               <LinkLogo href="#welcome-section" >ALBERT</LinkLogo>
             </AlbertLogo>
             <HamberguerMenu isOpen={isOpen} setOpen={setOpen}/>
-            <NavBar windowSize={windowSize} isOpen={isOpen}/>
+            <NavBar isOpen={isOpen}/>
             {/* <NavBarMobile isOpen={isOpen} /> */}
         </HeaderContainer>
     )

@@ -21,8 +21,8 @@ const SkillSection = () => {
             </SkillH2>
             <SkillGrid>
                 {
-                    skills.map(item => 
-                        (<Skill skill={item}/>)
+                    skills.map((item, index) => 
+                        (<Skill key={`${item.name}-${index}`} skill={item}/>)
                     )
                 }
             </SkillGrid>

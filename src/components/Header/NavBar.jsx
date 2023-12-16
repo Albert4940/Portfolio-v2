@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
+import { useContext } from 'react';
+import { ScreenSizeContext } from "../../utils/context";
 
 
 const desktopStyle = `display: flex;
@@ -52,9 +54,10 @@ const NavBarA = styled.a`
         transform: translateY(-3px);
     }
 `
-const NavBar = ({windowSize, isOpen}) => {   
+const NavBar = ({ isOpen}) => {   
     // Refac: Put the screensize into the context 
-    const isDeviceMobile = windowSize <= 768 ? true : false; 
+    const {screenSize} = useContext(ScreenSizeContext)
+    const isDeviceMobile = screenSize <= 768 ? true : false; 
 
     return(
         <NavBarContainer id="navbar" isOpen={isOpen} isDeviceMobile={isDeviceMobile}>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import colors from "../../utils/style/colors";
+import ImgProfile from '../../assets/profile.jpg';
 
 const AboutMeDiv = styled.div`
 margin: 30px auto; 
@@ -30,7 +31,7 @@ const P = styled.p`
 const AboutMe = () => {
     return(
     <AboutMeDiv id="about">
-        <AboutImg id="profil-img" alt="Profil image" src="profile.jpg" />
+        <AboutImg id="profil-img" alt="Profil image" src={ImgProfile} />
         <AboutText id="about-text">
           <AboutH2>About me</AboutH2>
           <P>
