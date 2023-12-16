@@ -4,11 +4,11 @@ import Welcome from "./components/Welcome"
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Header />
       <Welcome />
       <About />
-    </div>
+    </main>
   );
 }
 
