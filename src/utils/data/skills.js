@@ -1,4 +1,5 @@
-import { FaHtml5 } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaPhp, FaJava } from "react-icons/fa";
+import { IoLogoJavascript,IoLogoFirebase } from "react-icons/io5";
 
 export const skills = [
     {
@@ -9,21 +10,33 @@ export const skills = [
                 icon:<FaHtml5 />
             },
             {
-                name:"HTML5",
-                icon:<FaHtml5 />
+                name:"CSS3",
+                icon:<FaCss3Alt />
+            },
+            {
+                name:"JavaScript",
+                icon:<IoLogoJavascript />
+            },
+            {
+                name:"REACT Js",
+                icon:<FaReact />
             }
         ]
     },
     {
-        title: "FRONTEND",
+        title: "BACKEND",
         technologies:[
             {
-                name:"HTML5",
-                icon:<FaHtml5 />
+                name:"PHP",
+                icon:<FaPhp />
             },
             {
-                name:"HTML5",
-                icon:<FaHtml5 />
+                name:"Java",
+                icon:<FaJava />
+            },
+            {
+                name:"Firebase",
+                icon:<IoLogoFirebase />
             }
         ]
     },
