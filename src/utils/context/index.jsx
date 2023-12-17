@@ -15,3 +15,19 @@ export const ScreenSizeProvider = ({children}) => {
         </ScreenSizeContext.Provider>
     )
 }
+
+export const MenuContext = createContext();
+
+export const MenuProvider = ({children}) => {
+    const [isOpenMenu, setOpenMenu] = useState(false);
+
+    const toggleMenu = () => {
+        setOpenMenu(!isOpenMenu);
+    }
+
+    return (
+        <MenuContext.Provider value={{isOpenMenu,toggleMenu}}>
+            {children}
+        </MenuContext.Provider>
+    )
+}

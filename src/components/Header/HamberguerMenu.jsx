@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import colors from "../../utils/style/colors";
+import { useMenuContext } from "../../utils/hooks";
+
 const MenuContainer = styled.div`
     display:none;
     transition: 0.3s;
@@ -25,7 +27,10 @@ const MenuBar = styled.div`
     margin: 0.5rem;
     background-color: ${colors.primaryBlue};
 `
-const HamberguerMenu = ({isOpen,setOpen}) => {
+const HamberguerMenu = () => {
+    //put the getting value outside this block in order to acces to it directly from my styled comp
+    const {isOpenMenu:isOpen,toggleMenu:setOpen} = useMenuContext();
+
     return(
      <MenuContainer id="menu" className={isOpen ? "open" : ""} onClick={() => setOpen(!isOpen)}>
         <MenuBar />

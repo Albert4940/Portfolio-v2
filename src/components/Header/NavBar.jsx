@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
-import {useScreenSize} from "../../utils/hooks"
+import {useScreenSize, useMenuContext} from "../../utils/hooks"
 
 const desktopStyle = `display: flex;
         justify-content: flex-end;  
@@ -52,8 +52,9 @@ const NavBarA = styled.a`
         transform: translateY(-3px);
     }
 `
-const NavBar = ({ isOpen}) => {   
+const NavBar = () => {   
     const {isDeviceMobile} = useScreenSize()
+    const {isOpenMenu:isOpen} =  useMenuContext();
 
     return(
         <NavBarContainer id="navbar" isOpen={isOpen} isDeviceMobile={isDeviceMobile}>

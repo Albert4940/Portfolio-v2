@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ScreenSizeProvider } from './utils/context';
+import { ScreenSizeProvider, MenuProvider } from './utils/context';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ScreenSizeProvider>
-      <App />
+      <MenuProvider>
+         <App />
+      </MenuProvider>
     </ScreenSizeProvider>
   </React.StrictMode>
 );
