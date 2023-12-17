@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import colors from "../../utils/style/colors";
 import ImgProfile from '../../assets/profile.jpg';
-import { useContext } from "react";
-import { ScreenSizeContext } from "../../utils/context";
+import { useScreenSize } from "../../utils/hooks";
 
 const AboutMeStyleMobile = `
 flex-direction: column;  
@@ -37,10 +36,8 @@ const P = styled.p`
     color:${colors.primaryBlue};
 `
 const AboutMe = () => {
-
-    //remove logic to context
-    const {screenSize} = useContext(ScreenSizeContext);
-    const isDeviceMobile = screenSize <= 768 ? true : false; 
+  
+    const {isDeviceMobile} = useScreenSize();
 
     return(
     <AboutMeDiv id="about" isDeviceMobile={isDeviceMobile}>

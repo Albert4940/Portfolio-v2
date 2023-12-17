@@ -3,12 +3,12 @@ import Header from "./components/Header"
 import Welcome from "./components/Welcome"
 
 //Custom hook to get screenSize
-import { useEffect, useContext} from 'react';
-import { ScreenSizeContext } from "./utils/context";
+import { useEffect} from 'react';
+import { useScreenSize } from "./utils/hooks";
 
 function App() {
 
-  const {updateScreenSize} = useContext(ScreenSizeContext);
+  const {updateScreenSize} = useScreenSize();
 
   useEffect(() => {
     
