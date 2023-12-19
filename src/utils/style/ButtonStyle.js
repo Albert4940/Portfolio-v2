@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ButtonStyle = ({primaryWhite,secondary,thirdy}) => (styled.button`
+const ButtonStyle = ({primary,secondary,thirdy,fifth}) => (styled.button`
     border:none;
     cursor:pointer;
       display: flex;
@@ -9,8 +9,11 @@ const ButtonStyle = ({primaryWhite,secondary,thirdy}) => (styled.button`
     padding: 1rem 2rem;
     border-radius: 2px;
     font-size: 2rem;
-    color: ${primaryWhite};
-    background: ${secondary};
+    color: ${secondary} ;
+    a{
+      color:${secondary};
+    }
+    background: ${fifth};
     transition: background 0.3s ease-out;
     &:hover{
         background: ${thirdy};

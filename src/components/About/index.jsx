@@ -1,16 +1,18 @@
-import colors from "../../utils/style/colors";
+import { useColor } from "../../utils/hooks";
 import ResumeButton from "../ResumeButton";
 import AboutMe from "./AboutMe";
 import styled from "styled-components";
 import SkillSection from "./SkillSection";
 
 const AboutContainer = styled.section`
-background-color: ${colors.fourthy};
+background-color: ${({colors}) => colors ? colors.fourthy : ""};
 padding: 4rem 1rem;
 `
 const About = () => {
+    const colors = useColor();
+
     return(
-        <AboutContainer>
+        <AboutContainer colors={colors}>
             <AboutMe />
             <ResumeButton />
             <SkillSection />

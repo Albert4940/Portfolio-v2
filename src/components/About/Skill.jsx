@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import colors from "../../utils/style/colors";
+import { useColor } from "../../utils/hooks";
 
 //change name into stack
 //Put .NET Stcak
@@ -7,8 +7,7 @@ const SkillH3 = styled.h3`
     margin: 1rem auto;
 `
 const SkillContainer = styled.div`
-background: ${colors.primaryWhite};
-  color: ${colors.primaryBlue}
+background: ${({colors}) => colors ? colors.secondary : ""};
   padding: 2rem;
   border-radius: 5px;
   text-align: center;
@@ -25,9 +24,9 @@ margin:"10px auto",
 }
 
 const Skill = ({skill}) => {
-
+    const colors = useColor();
     return(
-        <SkillContainer key={skill.title}>
+        <SkillContainer key={skill.title} colors={colors}>
             <SkillH3>
              {skill.title}
             </SkillH3>

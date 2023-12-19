@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import colors from "../../utils/style/colors";
-import { useMenuContext } from "../../utils/hooks";
+import generateColors from "../../utils/style/colors";
+import { useMenuContext, useColor } from "../../utils/hooks";
 
 const MenuContainer = styled.div`
     display:none;
@@ -9,34 +9,36 @@ const MenuContainer = styled.div`
 
 //add variables for isopen
 //play with size for transition
-const openStyleButton = `display: block;
+const openStyleButton = (colors) => (`display: block;
 position: relative;
 background: none;
 border: none;
-color: ${colors.primaryBlue};
+color: ${colors.primary};
 font-size: 3rem;
 font-weight: bold;
-z-index: 5;  ` 
+z-index: 5;  `) 
+
 const CloseButton = styled.button`
-    ${({isOpen}) => !isOpen ? `display: none;` : openStyleButton}
+    ${({isOpen, colors}) => !isOpen ? `display: none;` : colors ? openStyleButton(colors) : ``}
 `
 //change componentname Hamberger menu
 const MenuBar = styled.div`
     width: 4rem;
     height: 0.6rem;
     margin: 0.5rem;
-    background-color: ${colors.primaryBlue};
+    background-color: ${({colors}) => colors && colors.primary};
 `
 const HamberguerMenu = () => {
     //put the getting value outside this block in order to acces to it directly from my styled comp
     const {isOpenMenu:isOpen,toggleMenu:setOpen} = useMenuContext();
-
+    const colors = useColor();
+    
     return(
      <MenuContainer id="menu" className={isOpen ? "open" : ""} onClick={() => setOpen(!isOpen)}>
-        <MenuBar />
-        <MenuBar />
-        <MenuBar />
-        <CloseButton id="btn-close" isOpen={isOpen} onClick={() => setOpen(!isOpen)}>X</CloseButton>   
+        <MenuBar colors={colors}/>
+        <MenuBar colors={colors}/>
+        <MenuBar colors={colors}/>
+        <CloseButton id="btn-close" isOpen={isOpen} colors={colors} onClick={() => setOpen(!isOpen)}>X</CloseButton>   
       </MenuContainer>
     )
 }

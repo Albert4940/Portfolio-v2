@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import NavBar from './NavBar';
 import HamberguerMenu from './HamberguerMenu';
-import colors from '../../utils/style/colors';
-/* */
+import { useColor } from '../../utils/hooks';
+
+
 const HeaderContainer = styled.header`
     width: 100%;
     min-height: 60px;
@@ -24,14 +25,16 @@ const AlbertLogo = styled.div`
     font-size: 2.2rem;
 `
 const LinkLogo = styled.a`
-  color:${colors.primaryBlue};
+  color: ${({colors}) => colors && colors.primary};
   font-weight: bold;
 `
 
-const Header = () => {
+const Header = () => {    
+    const colors = useColor()
+   
     return(
         <HeaderContainer id="header">
-            <AlbertLogo id="albert-logo">
+            <AlbertLogo id="albert-logo" colors={colors}>
               <LinkLogo href="#welcome-section" >ALBERT</LinkLogo>
             </AlbertLogo>
             <HamberguerMenu />

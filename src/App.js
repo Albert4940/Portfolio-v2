@@ -5,7 +5,7 @@ import Welcome from "./components/Welcome"
 //Custom hook to get screenSize
 import { useEffect} from 'react';
 import { useScreenSize } from "./utils/hooks";
-
+import GlobalStyled from "./utils/style/GlobalStyle";
 function App() {
 
   const {updateScreenSize} = useScreenSize();
@@ -24,6 +24,7 @@ function App() {
 
   return (
     <main className="App">
+      <GlobalStyled />
       <Header />
       <Welcome />
       <About />

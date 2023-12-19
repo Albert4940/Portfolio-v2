@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import colors from '../../utils/style/colors'
-import {useScreenSize, useMenuContext} from "../../utils/hooks"
+import {useScreenSize, useMenuContext, useColor} from "../../utils/hooks"
 
 const desktopStyle = `display: flex;
         justify-content: flex-end;  
@@ -23,26 +22,25 @@ const NavBarContainer = styled.nav`
    ${(props) => props.isOpen && `margin-right: 0;`}
 `
 
-const UlMobile = `
+const UlMobile = (secondary) => (`
 padding-top: 100px;
 width: 100vw;
 height: 100vh; 
 float: right;
 text-align: center;
-background-color: ${colors.primaryWhite};
-`
+background-color: ${secondary};
+`)
 const UlDesktop = `
 display: flex;
 margin-right: 2rem; 
 `
 const NavBarUl = styled.ul`
-${(props) => !props.isDeviceMobile ? UlDesktop : UlMobile}
+${({isDeviceMobile, colors}) => !isDeviceMobile ? UlDesktop : colors ? UlMobile(colors.secondary) : ""}
 `
 
 //remove color css attribute to global styled
 
 const NavBarA = styled.a`
-    color: ${colors.primaryBlue};
     display: block;
     font-size: 2.2rem;
     padding: 2rem;  
@@ -55,10 +53,11 @@ const NavBarA = styled.a`
 const NavBar = () => {   
     const {isDeviceMobile} = useScreenSize()
     const {isOpenMenu:isOpen} =  useMenuContext();
+    const colors = useColor();
 
     return(
         <NavBarContainer id="navbar" isOpen={isOpen} isDeviceMobile={isDeviceMobile}>
-            <NavBarUl isDeviceMobile={isDeviceMobile}>
+            <NavBarUl isDeviceMobile={isDeviceMobile} colors={colors}>
                 <li>
                     <NavBarA href="#about">
                         About

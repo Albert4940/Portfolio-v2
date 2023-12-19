@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import colors from "../../utils/style/colors";
 import ImgProfile from '../../assets/profile.jpg';
 import { useScreenSize } from "../../utils/hooks";
 
@@ -28,13 +27,10 @@ ${({isDeviceMobile}) => isDeviceMobile ? ` width: 65%;` : ``}
 `
 //How many h1 tagssholud exists in a website put it inside global styled
 const AboutH2 = styled.h2`
-    color:${colors.primaryBlue};
     text-align: center;
 `
 
-const P = styled.p`
-    color:${colors.primaryBlue};
-`
+
 const AboutMe = () => {
   
     const {isDeviceMobile} = useScreenSize();
@@ -44,11 +40,11 @@ const AboutMe = () => {
         <AboutImg id="profil-img" alt="Profil image" src={ImgProfile} />
         <AboutText id="about-text" isDeviceMobile={isDeviceMobile}>
           <AboutH2>About me</AboutH2>
-          <P>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue tellus in est ultricies, sit amet dignissim tellus facilisis. 
             Maecenas urna nibh, egestas vitae purus ut, faucibus feugiat lectus.
              Mauris eu augue gravida, sollicitudin diam sed, vehicula dolor.
-          </P>
+          </p>
         </AboutText>
      </AboutMeDiv>
     )
