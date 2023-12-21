@@ -1,6 +1,4 @@
-import styled from "styled-components";
-
-const ButtonStyle = ({primary,secondary,thirdy,fifth}) => (styled.button`
+export const ButtonStyle = ({primary,secondary,thirdy,fifth}) => (`
     border:none;
     cursor:pointer;
       display: flex;
@@ -23,5 +21,3 @@ const ButtonStyle = ({primary,secondary,thirdy,fifth}) => (styled.button`
     }
     `
 )
-
-export default ButtonStyle;

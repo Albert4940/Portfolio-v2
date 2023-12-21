@@ -1,5 +1,6 @@
 import { FaHtml5, FaCss3Alt, FaReact, FaPhp, FaJava } from "react-icons/fa";
 import { IoLogoJavascript,IoLogoFirebase } from "react-icons/io5";
+import promodoIMG from '../assets/promodoIMG.png'
 
 export const skills = [
     {
@@ -53,4 +54,28 @@ export const skills = [
             }
         ]
     }
+]
+
+export const projects = [
+    {
+        title:"Promodo",
+        description:`dolor sit amet, consectetur adipiscing elit. 
+        Sed rutrum est id neque volutpat facilisis.`,
+        link:"",
+        imgSrc: promodoIMG,
+    },
+    {
+        title:"Promodo",
+        description:`dolor sit amet, consectetur adipiscing elit. 
+        Sed rutrum est id neque volutpat facilisis.`,
+        link:"",
+        imgSrc:promodoIMG,
+    },
+    {
+        title:"Promodo",
+        description:`dolor sit amet, consectetur adipiscing elit. 
+        Sed rutrum est id neque volutpat facilisis.`,
+        link:"",
+        imgSrc:promodoIMG,
+    },
 ]

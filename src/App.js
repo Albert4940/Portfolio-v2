@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Header from "./components/Header"
 import Welcome from "./components/Welcome"
+import {ProjectSection as Project} from "./components/Project"
 
 //Custom hook to get screenSize
 import { useEffect} from 'react';
@@ -28,6 +29,7 @@ function App() {
       <Header />
       <Welcome />
       <About />
+      <Project />
     </main>
   );
 }

@@ -2,7 +2,7 @@ import styled from "styled-components"
 import GridStyle from "../../utils/style/GridStyle"
 import Skill from "./Skill";
 //change into ListSkill
-import { skills } from "../../utils/data/skills";
+import { skills } from "../../data";
 
 const SkillSectionConatainer = styled.div`
     margin: 0 6rem;

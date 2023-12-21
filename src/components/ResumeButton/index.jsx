@@ -1,6 +1,7 @@
-import ButtonStyle from "../../utils/style/ButtonStyle";
+import {ButtonStyle} from "../../utils/style/ButtonStyle";
 import { FaArrowDown } from "react-icons/fa";
 import { useColor } from "../../utils/hooks";
+import styled from "styled-components";
 //export without function
 
 const IStyle = {
@@ -9,12 +10,13 @@ const IStyle = {
     transition: 'transform 0.3s ease-out',
 }
 
+const Button = styled.button`
+  ${({colors}) => colors && ButtonStyle(colors)}
+`
+// const Button = styled.
 const ResumeButton = () => {
-
-  const Button = ButtonStyle(useColor());
-
     return(
-        <Button>
+        <Button colors={useColor()}>
           <a 
             href="path/to/file" 
             alt="" 
