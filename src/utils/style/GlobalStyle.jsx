@@ -41,6 +41,31 @@ html {
     scroll-behavior: smooth;
     color:${({colors}) => colors && colors.primary};
   }
+
+  /* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+   
+}
+
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 768px / 16px = 48em*/
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
   /* Base styles */
 
 body {

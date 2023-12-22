@@ -59,8 +59,7 @@ export const skills = [
 export const projects = [
     {
         title:"Promodo",
-        description:`dolor sit amet, consectetur adipiscing elit. 
-        Sed rutrum est id neque volutpat facilisis.`,
+        description:`dolor sit ame id neque volutpat facilisis.Sed rutrum est id neque volutpat facilisis.`,
         link:"",
         imgSrc: promodoIMG,
     },

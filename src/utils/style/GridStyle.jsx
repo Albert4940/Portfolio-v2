@@ -9,7 +9,10 @@ grid-gap: 4rem;
 width: 100%;
 max-width: 1280px;
 margin: 0 auto;
-margin-bottom: 6rem; 
+margin-bottom: 6rem;
+${({isDeviceMobile}) => 
+isDeviceMobile && 
+`grid-template-columns: 1fr;`} 
 `
 )
 export default GridStyle;

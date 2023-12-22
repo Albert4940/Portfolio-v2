@@ -21,6 +21,7 @@ display: "flex",
 alignItems: "center",
 justifyContent:"center",
 margin:"10px auto",
+
 }
 
 const Skill = ({skill}) => {
@@ -30,7 +31,7 @@ const Skill = ({skill}) => {
             <SkillH3>
              {skill.title}
             </SkillH3>
-            <ul>
+            <ul >
               {
                 skill.technologies.map((item,index) => (
                   <li key={index} style={LIStyle}>{item.icon}{item.name}</li>
