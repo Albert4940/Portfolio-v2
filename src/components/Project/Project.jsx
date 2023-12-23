@@ -28,7 +28,7 @@ const ProjectTitle = styled.h3`
     
 `
 const DescriptionWrapper = styled.div`
-background:red;
+border:none;
 position:absolute;
 top:0;
 height:100%;
@@ -42,6 +42,7 @@ background: rgba(56, 70, 86, 0.90);
 const DescriptionContainer = styled.a`
 // max-width: 300px;
 margin: auto;
+border-radius: 5px;
 position:relative;
 &:hover{
     div{   
@@ -70,7 +71,7 @@ export const Project = (props) => {
         //     </Description>
         // </ProjectStyled>
         <DescriptionContainer >
-            <img src={imgSrc} />
+            <img src={imgSrc} style={{borderRadius:"5px"}}/>
             <DescriptionWrapper>
                 <PStyle colors={colors}>
                     <strong>{title}</strong>{description}

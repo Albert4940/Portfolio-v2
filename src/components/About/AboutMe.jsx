@@ -28,6 +28,7 @@ ${({isDeviceMobile}) => isDeviceMobile ? ` width: 65%;` : ``}
 //How many h1 tagssholud exists in a website put it inside global styled
 const AboutH2 = styled.h2`
     text-align: center;
+    ${({isDeviceMobile}) => isDeviceMobile ? ` font-size: 4rem;` : ``}
 `
 
 
@@ -39,7 +40,7 @@ const AboutMe = () => {
     <AboutMeDiv id="about" isDeviceMobile={isDeviceMobile}>
         <AboutImg id="profil-img" alt="Profil image" src={ImgProfile} />
         <AboutText id="about-text" isDeviceMobile={isDeviceMobile}>
-          <AboutH2>About me</AboutH2>
+          <AboutH2 isDeviceMobile={isDeviceMobile}>About me</AboutH2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue tellus in est ultricies, sit amet dignissim tellus facilisis. 
             Maecenas urna nibh, egestas vitae purus ut, faucibus feugiat lectus.
