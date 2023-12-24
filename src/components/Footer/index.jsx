@@ -22,7 +22,7 @@ const Footer = () => {
     const {isDeviceMobile} = useScreenSize();
     return(
         <FooterWrapper colors={colors} isDevice={isDeviceMobile}>
-            <p>Created by Albert-Mary Dorce</p>
+            <p><span >&lt;</span>Created by Albert-Mary Dorce <span >&#47;&gt;</span></p>
         </FooterWrapper>
     )
 }
