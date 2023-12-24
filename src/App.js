@@ -7,6 +7,7 @@ import {ProjectSection as Project} from "./components/Project"
 import { useEffect} from 'react';
 import { useScreenSize } from "./utils/hooks";
 import GlobalStyled from "./utils/style/GlobalStyle";
+import Contact from "./components/Contact";
 function App() {
 
   const {updateScreenSize} = useScreenSize();
@@ -30,6 +31,7 @@ function App() {
       <Welcome />
       <About />
       <Project />
+      <Contact />
     </main>
   );
 }

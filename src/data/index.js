@@ -1,4 +1,8 @@
-import { FaHtml5, FaCss3Alt, FaReact, FaPhp, FaJava } from "react-icons/fa";
+import { 
+    FaHtml5, FaCss3Alt, FaReact, FaPhp, 
+    FaJava,FaTwitter,FaGithub, FaCodepen,
+    FaLinkedin, FaAt
+    } from "react-icons/fa";
 import { IoLogoJavascript,IoLogoFirebase } from "react-icons/io5";
 import promodoIMG from '../assets/promodoIMG.png'
 
@@ -76,5 +80,33 @@ export const projects = [
         Sed rutrum est id neque volutpat facilisis.`,
         link:"",
         imgSrc:promodoIMG,
+    },
+]
+
+export const contacts = [
+    {
+        title: "Twitter",
+        link:"",
+        icon:<FaTwitter />
+    },
+    {
+        title: "GitHub",
+        link:"",
+        icon:<FaGithub />
+    },
+    {
+        title: "Codepen",
+        link:"",
+        icon:<FaCodepen />
+    },
+    {
+        title: "Linkedin",
+        link:"",
+        icon:<FaLinkedin />
+    },
+    {
+        title: "Send a Mail",
+        link:"",
+        icon:<FaAt />
     },
 ]
