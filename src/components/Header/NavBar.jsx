@@ -64,7 +64,7 @@ const NavBar = () => {
                     </NavBarA>
                     </li>
                     <li>
-                    <NavBarA href="#projects">
+                    <NavBarA href="#works">
                         Work
                     </NavBarA>
                     </li>

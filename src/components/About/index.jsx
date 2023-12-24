@@ -12,7 +12,7 @@ const About = () => {
     const colors = useColor();
 
     return(
-        <AboutContainer colors={colors}>
+        <AboutContainer id="about"  colors={colors}>
             <AboutMe />
             <ResumeButton />
             <SkillSection />

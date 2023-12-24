@@ -49,7 +49,7 @@ const Contact = () => {
     const colors = useColor();
 
     return(
-        <ContactContainer colors={colors}>
+        <ContactContainer id="contact" colors={colors}>
             <ContactH2>Contact Me</ContactH2>
             <ContactP>How do you take your coffee?</ContactP>
             <ContactUl>

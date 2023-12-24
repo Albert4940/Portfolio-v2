@@ -37,7 +37,7 @@ const AboutMe = () => {
     const {isDeviceMobile} = useScreenSize();
 
     return(
-    <AboutMeDiv id="about" isDeviceMobile={isDeviceMobile}>
+    <AboutMeDiv isDeviceMobile={isDeviceMobile}>
         <AboutImg id="profil-img" alt="Profil image" src={ImgProfile} />
         <AboutText id="about-text" isDeviceMobile={isDeviceMobile}>
           <AboutH2 isDeviceMobile={isDeviceMobile}>About me</AboutH2>
