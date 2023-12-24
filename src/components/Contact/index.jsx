@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { useColor } from "../../utils/hooks";
+import { useColor, useScreenSize } from "../../utils/hooks";
 import { contacts } from "../../data";
 
 const ContactContainer = styled.section`
@@ -47,10 +47,10 @@ const ListLink = styled.li`
 
 const Contact = () => {
     const colors = useColor();
-
+    const {isDeviceMobile} = useScreenSize()
     return(
         <ContactContainer id="contact" colors={colors}>
-            <ContactH2>Contact Me</ContactH2>
+            <ContactH2 isDevice={isDeviceMobile}>Contact Me</ContactH2>
             <ContactP>How do you take your coffee?</ContactP>
             <ContactUl>
                 {

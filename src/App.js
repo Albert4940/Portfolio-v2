@@ -8,6 +8,7 @@ import { useEffect} from 'react';
 import { useScreenSize } from "./utils/hooks";
 import GlobalStyled from "./utils/style/GlobalStyle";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 function App() {
 
   const {updateScreenSize} = useScreenSize();
@@ -32,6 +33,7 @@ function App() {
       <About />
       <Project />
       <Contact />
+      <Footer />
     </main>
   );
 }
