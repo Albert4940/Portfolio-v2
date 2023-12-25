@@ -50,15 +50,17 @@ const NavBarA = styled.a`
         transform: translateY(-3px);
     }
 `
+const menuLinks = ["About","Works","Contact"];
+
 const NavBar = () => {   
     const {isDeviceMobile} = useScreenSize()
-    const {isOpenMenu:isOpen} =  useMenuContext();
+    const {isOpenMenu:isOpen, toggleMenu} =  useMenuContext();
     const colors = useColor();
 
     return(
         <NavBarContainer id="navbar" isOpen={isOpen} isDeviceMobile={isDeviceMobile}>
             <NavBarUl isDeviceMobile={isDeviceMobile} colors={colors}>
-                <li>
+                {/*<li>
                     <NavBarA href="#about">
                         About
                     </NavBarA>
@@ -72,8 +74,16 @@ const NavBar = () => {
                     <NavBarA href="#contact">
                         Contact
                     </NavBarA>
-                    </li>
-                
+    </li>*/}
+                {
+                    menuLinks.map(item => (
+                        <li 
+                        key={item} 
+                        onClick={() => toggleMenu(false)}>
+                            <NavBarA href={`#${item.toLowerCase()}`}>{item}</NavBarA>
+                        </li>
+                    ))
+                }
             </NavBarUl>
         </NavBarContainer>
     )

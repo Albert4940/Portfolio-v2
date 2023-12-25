@@ -44,7 +44,7 @@ const WelcomeTtile = styled.h1`
 `
 const Welcome = () => {
     return(
-        <WelcomeSection>
+        <WelcomeSection id="home">
             <WelcomeLinearGradient />
             <WelcomeContent>
                 <WelcomeTtile>Hey i am Albert</WelcomeTtile>

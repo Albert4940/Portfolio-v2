@@ -35,7 +35,7 @@ const Header = () => {
     return(
         <HeaderContainer id="header">
             <AlbertLogo id="albert-logo" colors={colors}>
-              <LinkLogo href="#welcome-section" >ALBERT</LinkLogo>
+              <LinkLogo href="#home" >ALBERT</LinkLogo>
             </AlbertLogo>
             <HamberguerMenu />
             <NavBar />
