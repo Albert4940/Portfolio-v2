@@ -1,10 +1,15 @@
 import styled from "styled-components";
 import generateColors from "../../utils/style/colors";
-import { useMenuContext, useColor } from "../../utils/hooks";
+import { useMenuContext, useColor, useScreenSize } from "../../utils/hooks";
 
 const MenuContainer = styled.div`
-    display:none;
+    margin-right: 2rem;
     transition: 0.3s;
+    ${
+        ({isOpen}) => isOpen &&  (
+            `div{display:none;}`
+        )
+    }
 `
 
 //add variables for isopen
@@ -32,9 +37,10 @@ const HamberguerMenu = () => {
     //put the getting value outside this block in order to acces to it directly from my styled comp
     const {isOpenMenu:isOpen,toggleMenu:setOpen} = useMenuContext();
     const colors = useColor();
-    
-    return(
-     <MenuContainer id="menu" className={isOpen ? "open" : ""} onClick={() => setOpen(!isOpen)}>
+    const {isDeviceMobile} = useScreenSize();
+   
+    return isDeviceMobile && (
+     <MenuContainer id="menu" isOpen={isOpen} onClick={() => setOpen(!isOpen)}>
         <MenuBar colors={colors}/>
         <MenuBar colors={colors}/>
         <MenuBar colors={colors}/>
