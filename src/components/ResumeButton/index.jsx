@@ -10,19 +10,25 @@ const IStyle = {
     transition: 'transform 0.3s ease-out',
 }
 
-const Button = styled.button`
+const Button = styled.a`
   ${({colors}) => colors && ButtonStyle(colors)}
+  
 `
 // const Button = styled.
 const ResumeButton = () => {
     return(
-        <Button colors={useColor()}>
-          <a 
+        <Button 
+        href="path/to/file" 
+        alt="" 
+        download
+          colors={useColor()}>
+          {/* <a 
             href="path/to/file" 
             alt="" 
             download>
-                Resume
-            </a>
+                
+            </a> */}
+            Resume
           <FaArrowDown style={IStyle}/>            
         </Button>
     )

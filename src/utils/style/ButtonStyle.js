@@ -1,5 +1,6 @@
 export const ButtonStyle = ({primary,secondary,thirdy,fifth}) => (`
     border:none;
+
     cursor:pointer;
       display: flex;
     align-items: center;
@@ -19,5 +20,6 @@ export const ButtonStyle = ({primary,secondary,thirdy,fifth}) => (`
             transform: translateY(2px);
           }
     }
+    width:7.5em;
     `
 )
