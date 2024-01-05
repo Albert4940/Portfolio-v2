@@ -47,8 +47,9 @@ const Welcome = () => {
         <WelcomeSection id="home">
             <WelcomeLinearGradient />
             <WelcomeContent>
-                <WelcomeTtile>Hey i am Albert</WelcomeTtile>
-                <WelcomeP>a web developer</WelcomeP>
+                <WelcomeTtile>Hello. I'm Albert</WelcomeTtile>
+                <WelcomeP>a Software Developer</WelcomeP>
+                
                 <ResumeButton />
             </WelcomeContent>            
         </WelcomeSection>

@@ -44,7 +44,8 @@ const ShowAllButton = () => {
 export const ProjectSection = () => {
     return(
         <ProjectContainer id="works" >
-            <h2>These are some my projects</h2>
+            <h2 >These are some my projects</h2>
+            <br />
             <ProjectGrid>
                 {projects.map((item,index) => (
                     <Project key={`${item.title}-${index}`} project={item} />

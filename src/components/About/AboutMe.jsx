@@ -23,11 +23,13 @@ const AboutImg = styled.img`
 
 const AboutText = styled.div`
 width: 40%;
+margin-bottom: 10px;
 ${({isDeviceMobile}) => isDeviceMobile ? ` width: 65%;` : ``}
 `
 //How many h1 tagssholud exists in a website put it inside global styled
 const AboutH2 = styled.h2`
     text-align: center;
+    margin-bottom: 10px;
     ${({isDeviceMobile}) => isDeviceMobile ? ` font-size: 4rem;` : ``}
 `
 
@@ -38,14 +40,22 @@ const AboutMe = () => {
 
     return(
     <AboutMeDiv isDeviceMobile={isDeviceMobile}>
-        <AboutImg id="profil-img" alt="Profil image" src={ImgProfile} />
+        {/* <AboutImg id="profil-img" alt="Profil image" src={ImgProfile} /> */}
         <AboutText id="about-text" isDeviceMobile={isDeviceMobile}>
           <AboutH2 isDeviceMobile={isDeviceMobile}>About me</AboutH2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla congue tellus in est ultricies, sit amet dignissim tellus facilisis. 
-            Maecenas urna nibh, egestas vitae purus ut, faucibus feugiat lectus.
-             Mauris eu augue gravida, sollicitudin diam sed, vehicula dolor.
+          Hello! I'm Albert-Mary Dorce, a passionate software developer based in Quebec, Canada, holding a bachelor's degree in computer science. 
+          I find joy in crafting robust software solutions by leveraging both my creativity and imagination. 
+          The enchantment of bringing useful and original projects to life is what truly motivates me.
           </p>
+          <br/>
+          <p>
+          Currently, I am immersed in the development of an E-commerce platform using the MERN (MongoDB, Express, React, Node) stack. 
+          My approach includes incorporating state management technologies such as Redux and Redux Toolkit, along with integrating the PayPal API 
+          for seamless payment processing.
+          </p>
+          <br/>
+          <p>I am passionate about creating user-friendly software by transforming user needs into robust functionality</p>
         </AboutText>
      </AboutMeDiv>
     )

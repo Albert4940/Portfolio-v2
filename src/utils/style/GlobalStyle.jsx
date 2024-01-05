@@ -77,7 +77,7 @@ body {
 
 
 h1,
-h2 {
+h2,h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   text-align: center;

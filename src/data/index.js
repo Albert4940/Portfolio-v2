@@ -1,11 +1,20 @@
 import { 
     FaHtml5, FaCss3Alt, FaReact, FaPhp, 
     FaJava,FaTwitter,FaGithub, FaCodepen,
-    FaLinkedin, FaAt
+    FaLinkedin, FaAt, FaNode
     } from "react-icons/fa";
+    import { SiExpress, SiCsharp, SiDotnet } from "react-icons/si";
 import { IoLogoJavascript,IoLogoFirebase } from "react-icons/io5";
-import promodoIMG from '../assets/promodoIMG.png'
+import mongoDBICON from "../assets/icons8-mongo-db-64.png"
 
+//wndow.iinerWidth = 852
+import promodoIMG from '../assets/25+5IMG.png'
+import drumMachineIMG from '../assets/d2.png'
+import portfolioIMG from '../assets/p.png'
+import calculatorIMG from '../assets/c.png'
+import Random from '../assets/Random.png'
+import ECom from '../assets/E-com.png'
+import FoodDeliver from '../assets/foodDelivery.png'
 export const skills = [
     {
         title: "FRONTEND",
@@ -40,46 +49,65 @@ export const skills = [
                 icon:<FaJava />
             },
             {
-                name:"Firebase",
-                icon:<IoLogoFirebase />
+                name:"Node.js",
+                icon:<FaNode />
+            },
+            {
+                name:"Express.js",
+                icon:<SiExpress />
+            },
+            {
+                name:"MongoDB",
+                icon:mongoDBICON
+            },
+            {
+                name:"C#",
+                icon:<SiCsharp />
+            },
+            {
+                name:".NET Core",
+                icon:<SiDotnet />
             }
         ]
     },
-    {
-        title: "FRONTEND",
-        technologies:[
-            {
-                name:"HTML5",
-                icon:<FaHtml5 />
-            },
-            {
-                name:"HTML5",
-                icon:<FaHtml5 />
-            }
-        ]
-    }
 ]
 
 export const projects = [
     {
-        title:"Promodo",
-        description:`dolor sit ame id neque volutpat facilisis.Sed rutrum est id neque volutpat facilisis.`,
+        title:"25 + 5 Clock",
+        description:`A dynamic React app designed to enhance focus and productivity. Tailor your work sessions with customizable 25-minute focus intervals followed by rejuvenating 5-minute breaks. Stay organized, stay motivated.`,
         link:"",
         imgSrc: promodoIMG,
     },
     {
-        title:"Promodo",
-        description:`dolor sit amet, consectetur adipiscing elit. 
-        Sed rutrum est id neque volutpat facilisis.`,
-        link:"",
-        imgSrc:promodoIMG,
+        title:"Drum machine",
+        description:`Built using ReactJS, this minimal drum machine is a user-friendly web application featuring nine clickable drum pads. Each pad represents a unique drum sound, allowing users to easily create beats and rhythms by clicking on the pads. `,
+        link:"https://codepen.io/albert4940/full/qBMByzV",
+        imgSrc:drumMachineIMG,
     },
     {
-        title:"Promodo",
-        description:`dolor sit amet, consectetur adipiscing elit. 
-        Sed rutrum est id neque volutpat facilisis.`,
-        link:"",
-        imgSrc:promodoIMG,
+        title:"JavaScript Calculator",
+        description:`dolor sit amet, consectetur adipiscing elit. Sed rutrum est id neque volutpat facilisis.`,
+        link:"https://codepen.io/albert4940/full/PoBoyWg",
+        imgSrc:portfolioIMG,
+    },
+    {
+        title:"Proshop eCommerce",
+        description:`eCommerce platform built with the MERN stack & Redux.`,
+        link:"https://codepen.io/albert4940/full/PoBoyWg",
+        imgSrc:ECom,
+    },
+    {
+        title:"Random Quote Machine",
+        description:`React-based, fetches quotes from an external API, providing users with a dynamic and constantly changing collection of wisdom. Leveraging React's component structure, the application ensures a seamless and responsive user experience. With each interaction, a new quote is fetched asynchronously, creating an engaging and thought-provoking environment.`,
+        link:"https://codepen.io/albert4940/full/poKMxPr",
+        imgSrc:Random,
+    },
+    {
+        title:"Food Delivery",
+        description:`Featuring an ASP.NET MVC website for front-office use, an API for order processing, and a MAUI desktop app for back-office tasks, the mobile version enhances user experience, creating a cohesive and versatile solution for efficient operations.`,
+        link:"https://codepen.io/albert4940/full/PoBoyWg",
+        imgSrc:FoodDeliver,
     },
 ]
 

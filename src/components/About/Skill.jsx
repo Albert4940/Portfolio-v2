@@ -34,7 +34,7 @@ const Skill = ({skill}) => {
             <ul >
               {
                 skill.technologies.map((item,index) => (
-                  <li key={index} style={LIStyle}>{item.icon}{item.name}</li>
+                  <li key={index} style={LIStyle}>{item.name !== "MongoDB" ? item.icon : <img src={item.icon} style={{width: "16px", height: "16px"}}/>}{`  `}{item.name}</li>
                 ))
               }
             </ul>

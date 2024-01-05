@@ -1,81 +1,15 @@
-/* Custom properties/variables  */
-:root {
-  --main-white: #f0f0f0;
-  --main-red: #be3144;
-  --main-blue: #45567d;
-  --main-gray: #303841;
+.project-image {
+  height: calc(100% - 6.8rem) !important;
+  min-height: 300px;
+  width: 100% !important;
+  object-fit: cover !important;
 }
-
-
-
-
-
-
-
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-   
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
 }
-
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
-}
-
-/* 768px / 16px = 48em*/
-
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-}
-
-
-
-
-/*MOBILE*/
-
-/* #navbar-mobile {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 100vw;
-  margin-right: -800px;
-  transition:0.5s; 
-}
-
-#navbar-mobile.open {
-  margin-right: 0;
-} */
-
-/* #menu.open div{
-  display: none;
-} */
-
-/* #menu.open #btn-close{
-  display: block;
-  position: relative;
-  background: none;
-  border: none;
-  color: var(--main-white);
-  font-size: 3rem;
-  font-weight: 400;
-  z-index: 5;  
-} */
-
-@media only screen and (max-width: 48em){
-  /* #header #navbar{
-   display: none;
-  } */
-/*   
-  #menu{    
-    display: block;
-  } */
+.project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
 }
