@@ -1,5 +1,5 @@
 import styled from "styled-components";
-//import WelcomePicture from "../../../public/images/welcome.jpeg";
+import WelcomePicture from "../../assets/welcome.jpeg";
 import colors from "../../utils/style/colors";
 import ResumeButton from "../ResumeButton";
 

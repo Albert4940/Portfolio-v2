@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "homepage": "https://albert4940.github.io/Portfolio-v2/",
-=======
-  "homepage": "https://Albert4940.github.io/Portfolio-v2",
->>>>>>> 7c382c70e4b8cfd230432f763d2cf30d92f68de8
   "name": "portfolio-v2",
   "version": "0.1.0",
   "private": true,
