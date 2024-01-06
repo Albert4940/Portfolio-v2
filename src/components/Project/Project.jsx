@@ -100,7 +100,7 @@ export const Project = (props) => {
     const colors = useColor();
     const {isDeviceMobile} = useScreenSize()
 
-    const {imgSrc,title,description} = props.project
+    const {imgSrc,title,description, link} = props.project
 
     //console.log(title, " - ", CutLongDescription(description))
     return(
@@ -114,7 +114,7 @@ export const Project = (props) => {
         //         </p>
         //     </Description>
         // </ProjectStyled>
-        <DescriptionContainer >
+        <DescriptionContainer href={link} alt="link Project">
             {/* <img  className="project-image" src={imgSrc} style={{borderRadius:"5px"}}/> */}
             <IC>
                 <img className="project-image" src={imgSrc} />

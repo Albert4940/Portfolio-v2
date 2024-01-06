@@ -3,7 +3,7 @@ import {
     FaJava,FaTwitter,FaGithub, FaCodepen,
     FaLinkedin, FaAt, FaNode
     } from "react-icons/fa";
-    import { SiExpress, SiCsharp, SiDotnet } from "react-icons/si";
+    import { SiExpress, SiCsharp, SiDotnet, SiRedux } from "react-icons/si";
 import { IoLogoJavascript,IoLogoFirebase } from "react-icons/io5";
 import mongoDBICON from "../assets/icons8-mongo-db-64.png"
 
@@ -15,6 +15,7 @@ import calculatorIMG from '../assets/c.png'
 import Random from '../assets/Random.png'
 import ECom from '../assets/E-com.png'
 import FoodDeliver from '../assets/foodDelivery.png'
+
 export const skills = [
     {
         title: "FRONTEND",
@@ -34,6 +35,10 @@ export const skills = [
             {
                 name:"REACT Js",
                 icon:<FaReact />
+            },
+            {
+                name:"Redux",
+                icon: <SiRedux />
             }
         ]
     },
@@ -76,7 +81,7 @@ export const projects = [
     {
         title:"25 + 5 Clock",
         description:`A dynamic React app designed to enhance focus and productivity. Tailor your work sessions with customizable 25-minute focus intervals followed by rejuvenating 5-minute breaks. Stay organized, stay motivated.`,
-        link:"",
+        link:"https://codepen.io/albert4940/full/GRBJLPv",
         imgSrc: promodoIMG,
     },
     {
@@ -86,15 +91,15 @@ export const projects = [
         imgSrc:drumMachineIMG,
     },
     {
-        title:"JavaScript Calculator",
+        title:"Portfolio",
         description:`dolor sit amet, consectetur adipiscing elit. Sed rutrum est id neque volutpat facilisis.`,
-        link:"https://codepen.io/albert4940/full/PoBoyWg",
+        link:"https://github.com/Albert4940/Portfolio-v2",
         imgSrc:portfolioIMG,
     },
     {
         title:"Proshop eCommerce",
         description:`eCommerce platform built with the MERN stack & Redux.`,
-        link:"https://codepen.io/albert4940/full/PoBoyWg",
+        link:"https://github.com/Albert4940/proshop",
         imgSrc:ECom,
     },
     {

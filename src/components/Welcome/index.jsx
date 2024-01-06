@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import WelcomePicture from "../../assets/welcome.jpeg";
+//import WelcomePicture from "../../../public/images/welcome.jpeg";
 import colors from "../../utils/style/colors";
 import ResumeButton from "../ResumeButton";
 
@@ -13,7 +13,7 @@ const WelcomeSection = styled.section`
     align-items:center;
     background-color: #000;
     /*   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
-    background-image: url(${WelcomePicture});
+    background-image: url("/images/welcome.jpeg");
     background-repeat:no-repeat;
     background-size:cover; 
 `

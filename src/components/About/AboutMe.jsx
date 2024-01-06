@@ -22,9 +22,9 @@ const AboutImg = styled.img`
 `
 
 const AboutText = styled.div`
-width: 40%;
+width: 60%;
 margin-bottom: 10px;
-${({isDeviceMobile}) => isDeviceMobile ? ` width: 65%;` : ``}
+${({isDeviceMobile}) => isDeviceMobile ? ` width: 80%;` : ``}
 `
 //How many h1 tagssholud exists in a website put it inside global styled
 const AboutH2 = styled.h2`
