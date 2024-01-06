@@ -13,7 +13,7 @@ const WelcomeSection = styled.section`
     align-items:center;
     background-color: #000;
     /*   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
-    background-image: url("/images/welcome.jpeg");
+    background-image: url(${WelcomePicture});
     background-repeat:no-repeat;
     background-size:cover; 
 `
