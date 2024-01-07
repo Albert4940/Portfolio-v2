@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/Portfolio-v2/static/css/main.f17913bf.css",
-    "main.js": "/Portfolio-v2/static/js/main.26c32bda.js",
+    "main.js": "/Portfolio-v2/static/js/main.80355e67.js",
     "static/js/787.a7a53f8a.chunk.js": "/Portfolio-v2/static/js/787.a7a53f8a.chunk.js",
     "static/media/p.png": "/Portfolio-v2/static/media/p.20f8f539a28853c71aeb.png",
     "static/media/foodDelivery.png": "/Portfolio-v2/static/media/foodDelivery.6285b589e1bd7e982f03.png",
     "static/media/E-com.png": "/Portfolio-v2/static/media/E-com.716ac4ed651420b8c1ae.png",
     "static/media/welcome.jpeg": "/Portfolio-v2/static/media/welcome.82b1c0bc8b1ae463db50.jpeg",
+    "static/media/AlbertDevCV.pdf": "/Portfolio-v2/static/media/AlbertDevCV.df78f30eaf09afb55103.pdf",
     "static/media/profile.jpg": "/Portfolio-v2/static/media/profile.979dda0cdfd716605b21.jpg",
     "static/media/25+5IMG.png": "/Portfolio-v2/static/media/25+5IMG.3436c9d568a980d720c9.png",
     "static/media/Random.png": "/Portfolio-v2/static/media/Random.4a949c5ca553a4791cc6.png",
@@ -14,11 +15,11 @@
     "static/media/c.png": "/Portfolio-v2/static/media/c.5a4c6c7bfe57c2fb1e04.png",
     "index.html": "/Portfolio-v2/index.html",
     "main.f17913bf.css.map": "/Portfolio-v2/static/css/main.f17913bf.css.map",
-    "main.26c32bda.js.map": "/Portfolio-v2/static/js/main.26c32bda.js.map",
+    "main.80355e67.js.map": "/Portfolio-v2/static/js/main.80355e67.js.map",
     "787.a7a53f8a.chunk.js.map": "/Portfolio-v2/static/js/787.a7a53f8a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f17913bf.css",
-    "static/js/main.26c32bda.js"
+    "static/js/main.80355e67.js"
   ]
 }
