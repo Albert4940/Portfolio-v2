@@ -92,7 +92,7 @@ export const projects = [
     },
     {
         title:"Portfolio",
-        description:`dolor sit amet, consectetur adipiscing elit. Sed rutrum est id neque volutpat facilisis.`,
+        description:`Revamping my portfolio using React for a sleek and modern front-end design. Demonstrating my proficiency in creating responsive and interactive user interfaces.`,
         link:"https://github.com/Albert4940/Portfolio-v2",
         imgSrc:portfolioIMG,
     },
