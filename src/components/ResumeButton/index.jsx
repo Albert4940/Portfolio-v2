@@ -1,6 +1,7 @@
 import {ButtonStyle} from "../../utils/style/ButtonStyle";
 import { FaArrowDown } from "react-icons/fa";
 import { useColor } from "../../utils/hooks";
+import ResumeFile from "../../file/AlbertDevCV.pdf"
 import styled from "styled-components";
 //export without function
 
@@ -18,7 +19,7 @@ const Button = styled.a`
 const ResumeButton = () => {
     return(
         <Button 
-        href="/file/AlbertDevCv.pdf" 
+        href={ResumeFile} 
         alt="" 
         download
           colors={useColor()}>
