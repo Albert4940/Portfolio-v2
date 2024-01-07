@@ -117,29 +117,29 @@ export const projects = [
 ]
 
 export const contacts = [
-    {
-        title: "Twitter",
-        link:"",
-        icon:<FaTwitter />
-    },
+    // {
+    //     title: "Twitter",
+    //     link:"",
+    //     icon:<FaTwitter />
+    // },
     {
         title: "GitHub",
-        link:"",
+        link:"https://github.com/Albert4940",
         icon:<FaGithub />
     },
     {
         title: "Codepen",
-        link:"",
+        link:"https://codepen.io/albert4940",
         icon:<FaCodepen />
     },
     {
         title: "Linkedin",
-        link:"",
+        link:"https://www.linkedin.com/in/dorc%C3%A9-albert-mary/",
         icon:<FaLinkedin />
     },
     {
         title: "Send a Mail",
-        link:"",
+        link:"dorcealbertmary@gmail.com",
         icon:<FaAt />
     },
 ]

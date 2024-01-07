@@ -12,13 +12,13 @@ const IStyle = {
 
 const Button = styled.a`
   ${({colors}) => colors && ButtonStyle(colors)}
-  
+
 `
 // const Button = styled.
 const ResumeButton = () => {
     return(
         <Button 
-        href="path/to/file" 
+        href="/file/AlbertDevCv.pdf" 
         alt="" 
         download
           colors={useColor()}>

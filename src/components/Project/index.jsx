@@ -5,6 +5,7 @@ import { Project } from "./Project"
 import { ButtonStyle } from "../../utils/style/ButtonStyle"
 import { useColor } from "../../utils/hooks"
 import { FaChevronRight } from "react-icons/fa";
+import ResumeButton from "../ResumeButton"
 
 const ProjectContainer = styled.section`
     text-align: center;
@@ -13,15 +14,27 @@ const ProjectContainer = styled.section`
 `
 const ProjectGrid = GridStyle();
 
-const Button = styled.button`
+// const Button = styled.button`
+// ${({colors}) => colors && ButtonStyle(colors)}
+// transition: background 0.3s ease-out;
+// &:hover{
+//     svg {
+//         transform: translateX(2px);
+//       }
+// }
+// `
+
+const Button = styled.a`
 ${({colors}) => colors && ButtonStyle(colors)}
 transition: background 0.3s ease-out;
+width: 7.8em;
 &:hover{
     svg {
         transform: translateX(2px);
       }
 }
 `
+
 const IconStyle = {
     marginLeft: '10px',
     translateX: '0',
@@ -29,13 +42,8 @@ const IconStyle = {
 }
 const ShowAllButton = () => {
     return(
-        <Button colors={useColor()}>
-          <a 
-            href="path/to/file" 
-            alt="" 
-            download>
+        <Button href="https://github.com/Albert4940" colors={useColor()}>
                 Show All
-            </a>
           <FaChevronRight style={IconStyle}/>            
         </Button>
     )
@@ -52,6 +60,7 @@ export const ProjectSection = () => {
                 ))}
             </ProjectGrid>
             <ShowAllButton />
+            {/* <ResumeButton /> */}
         </ProjectContainer>
     )
 }

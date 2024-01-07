@@ -56,7 +56,7 @@ const Contact = () => {
                 {
                     contacts.map(({title,icon,link}) => (
                         <ListLink key={title}>
-                            <a href={link}>{icon}{title}</a>
+                            <a href={title.toLowerCase().includes("mail") ? `mailto:${link}` : link}>{icon}{title}</a>
                         </ListLink>
                     ))
                 }
