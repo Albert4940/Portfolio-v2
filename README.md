@@ -1,3 +1,36 @@
+
+# Portfolio-v2
+
+## Overview
+
+Version 2 : Revamping my portfolio using React for a sleek and modern front-end design. Demonstrating my proficiency in creating responsive and interactive user interfaces. The redesign showcases my commitment to staying current with industry trends in front-end development.
+
+## Technologies Used
+
+- **Figma**: Employed to design and prototype the user interface, providing a visual blueprint for the final portfolio.
+- **Git,GitHub**: Utilized for version control and collaborative code management, ensuring efficient tracking of changes and serving as a secure backup.
+- **GitHub Project**:Implemented for organized project management, using issues to streamline workflow and monitor progress.
+- **React**: Used for building the user interface and providing a dynamic user experience.
+- **Styled-components**: Employed for styling components in a modular and efficient way.
+- **React-Icons**:Integrated for its extensive library of high-quality icons, simplifying the addition of visually appealing elements to the application.
+- **useContext**: Utilized for managing global variables, such as tracking the state of the menu and device screen.
+
+## Challenges
+
+| Challenge Description                         | Solution                                                                                         |
+|-----------------------------------------------|--------------------------------------------------------------------------------------------------|
+| Header and Menu: Difficulty with media queries logic within React components| Utilized `window.innerWidth` to dynamically determine screen size, adapting styles for mobile devices. |
+
+## Global State Management
+
+Utilized `useContext` for global state management. In the specific use cases, like tracking the menu state or customizing styles based on the device screen and soon for light-dark mode and translation.
+
+## Future Features
+
+- **Translate Language**: Implement a language translation feature, enhancing accessibility and allowing users to view content in their preferred language..
+- **Dark Mode**: Implement a night mode feature to enhance user experience in low-light environments.
+- **Redux Integration**: Plan to integrate Redux for more advanced and centralized state management.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
