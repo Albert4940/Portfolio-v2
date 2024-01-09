@@ -4,6 +4,7 @@
 ## Overview
 
 Version 2 : Revamping my portfolio using React for a sleek and modern front-end design. Demonstrating my proficiency in creating responsive and interactive user interfaces. The redesign showcases my commitment to staying current with industry trends in front-end development.
+![Screen cast gif](https://github.com/Albert4940/Portfolio-v2/blob/main/public/images/screenGif.gif)
 
 ## Technologies Used
 
