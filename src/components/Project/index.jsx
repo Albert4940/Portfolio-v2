@@ -3,7 +3,7 @@ import GridStyle from "../../utils/style/GridStyle"
 import {projects} from "../../data"
 import { Project } from "./Project"
 import { ButtonStyle } from "../../utils/style/ButtonStyle"
-import { useColor } from "../../utils/hooks"
+import { useColor, useScreenSize } from "../../utils/hooks"
 import { FaChevronRight } from "react-icons/fa";
 import ResumeButton from "../ResumeButton"
 
@@ -28,6 +28,7 @@ const Button = styled.a`
 ${({colors}) => colors && ButtonStyle(colors)}
 transition: background 0.3s ease-out;
 width: 7.8em;
+${(isDeviceMobile) => isDeviceMobile && `width: 7.9em;`}
 &:hover{
     svg {
         transform: translateX(2px);
@@ -41,8 +42,9 @@ const IconStyle = {
     transition: 'transform 0.3s ease-out',
 }
 const ShowAllButton = () => {
+    const {isDeviceMobile} = useScreenSize();
     return(
-        <Button href="https://github.com/Albert4940" colors={useColor()}>
+        <Button href="https://github.com/Albert4940" colors={useColor()} isDeviceMobile={isDeviceMobile}>
                 Show All
           <FaChevronRight style={IconStyle}/>            
         </Button>
@@ -50,6 +52,7 @@ const ShowAllButton = () => {
 }
 
 export const ProjectSection = () => {
+    
     return(
         <ProjectContainer id="works" >
             <h2 >These are some my projects</h2>
