@@ -111,7 +111,7 @@ export const projects = [
     {
         title:"Food Delivery",
         description:`Featuring an ASP.NET MVC website for front-office use, an API for order processing, and a MAUI desktop app for back-office tasks, the mobile version enhances user experience, creating a cohesive and versatile solution for efficient operations.`,
-        link:"https://codepen.io/albert4940/full/PoBoyWg",
+        link:"https://github.com/Albert4940/FoodDelivery",
         imgSrc:FoodDeliver,
     },
 ]
