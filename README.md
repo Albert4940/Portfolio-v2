@@ -32,6 +32,8 @@ Utilized `useContext` for global state management. In the specific use cases, li
 - **Dark Mode**: Implement a night mode feature to enhance user experience in low-light environments.
 - **Redux Integration**: Plan to integrate Redux for more advanced and centralized state management.
 
+## Live Demo
+**[Live website](https://albert4940.github.io/Portfolio-v2/)**
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
